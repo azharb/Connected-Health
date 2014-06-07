@@ -1,0 +1,16 @@
+google_defaults: &google_defaults
+  scopes: [userinfo.email, userinfo.profile]
+  glass_scopes: [userinfo.email, userinfo.profile, glass.timeline]
+development:
+  client_id: 202617025902-8mugdju6g22g45bots6g85k5ruc5fvk0.apps.googleusercontent.com
+  client_secret: u69bZrVT43EQlReOtKkidXtH
+  callback_url: http://localhost:3000
+  <<: *google_defaults
+test:
+  client_id: 202617025902-8mugdju6g22g45bots6g85k5ruc5fvk0.apps.googleusercontent.com
+  client_secret: u69bZrVT43EQlReOtKkidXtH
+  <<: *google_defaults
+production:
+  client_id: 202617025902-8mugdju6g22g45bots6g85k5ruc5fvk0.apps.googleusercontent.com
+  client_secret: u69bZrVT43EQlReOtKkidXtH
+  <<: *google_defaults

@@ -1,0 +1,9 @@
+
+Welcome, <%= @profile["name"]["value"] %>
+<br/>
+<br/>
+Height: <%= @profile["height"]["value"] %>  <a href='/sendToGlass?text=Height:<%= @profile["height"]["value"] %>' class='btn btn-success'>Sync to Glass</a><br/><br/>
+Race: <%= @profile["race"]["value"] %> <a href='/sendToGlass?text=Race: <%= @profile["race"]["value"] %>' class='btn btn-success'>Sync to Glass</a><br/><br/>
+Eye Color: <%= @profile["eye_color"]["value"] %> <a href='/sendToGlass?text=Eye Color: <%= @profile["eye_color"]["value"] %>' class='btn btn-success'>Sync to Glass</a><br/><br/>
+Blood Type: <%= @profile["blood_type"]["value"] %> <a href='/sendToGlass?text=Blood Type: <%= @profile["blood_type"]["value"] %>'  class='btn btn-success'>Sync to Glass</a><br/><br/>
+Shoe Size: <%= @profile["shoe_size"]["value"] %> <a href='/sendToGlass?text=Shoe Size: <%= @profile["shoe_size"]["value"] %>'  class='btn btn-success'>Sync to Glass</a><br/>
